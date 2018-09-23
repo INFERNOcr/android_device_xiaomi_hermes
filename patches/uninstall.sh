@@ -4,7 +4,7 @@ echo $1
 rootdirectory="$PWD"
 # ---------------------------------
 
-dirs="frameworks/av"
+dirs="build/make/core build/soong frameworks/base frameworks/av hardware/interfaces system/core"
 
 for dir in $dirs ; do
 	cd $rootdirectory
