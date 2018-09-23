@@ -4,7 +4,7 @@ echo $1
 rootdirectory="$PWD"
 # ---------------------------------
 
-dirs="build/make/core build/soong frameworks/av frameworks/base hardware/interfaces system/core"
+dirs="build/make/core build/soong frameworks/base hardware/interfaces system/core"
 
 # red + nocolor
 RED='\033[0;31m'
@@ -16,7 +16,7 @@ for dir in $dirs ; do
 	cd $dir
         echo -e "\n${RED}Applying ${NC}$dir ${RED}patches...${NC}\n"
 	#git am $rootdirectory/vendor/mediatek/patches/$dir/*.patch
-	git apply -v $rootdirectory/vendor/mediatek/patches/$dir/*.patch
+	git apply -v $rootdirectory/device/xiaomi/hermes/patches/$dir/*.patch
 done
 
 # -----------------------------------

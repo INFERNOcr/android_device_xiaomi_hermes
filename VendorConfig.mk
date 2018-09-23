@@ -1,4 +1,4 @@
-VND_MTK_PATH := vendor/mediatek
+VND_MTK_PATH := device/xiaomi/hermes
 
 TARGET_SPECIFIC_HEADER_PATH := $(VND_MTK_PATH)/include
 
