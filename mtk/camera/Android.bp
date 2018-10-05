@@ -7,7 +7,7 @@ cc_library_static {
     srcs: ["CameraParameters.cpp"],
     export_include_dirs: ["."],
 
- //   include_dirs: [
- //       "device/xiaomi/hermes/include",
+    include_dirs: [
+        "device/xiaomi/hermes/include",
     ]
 }
