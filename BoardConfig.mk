@@ -164,7 +164,7 @@ BOARD_SEPOLICY_DIRS += device/xiaomi/hermes/sepolicy
 POLICYVERS := 28
 
 # Misc
-BLOCK_BASED_OTA := false
+#BLOCK_BASED_OTA := false
 
 # Build kernel without kernel sources
 $(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
