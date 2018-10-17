@@ -30,6 +30,7 @@ BOARD_MKBOOTIMG_ARGS := \
     --ramdisk_offset 0x03f88000 \
     --second_offset 0x00e88000 \
     --tags_offset 0x0df88000
+
 TARGET_BOARD_KERNEL_HEADERS := device/xiaomi/hermes/kernel-headers
 BOARD_CUSTOM_BOOTIMG := true
 
@@ -127,10 +128,16 @@ TARGET_CAMERASERVICE_CLOSES_NATIVE_HANDLES := true
 # Fix video autoscaling on old OMX decoders
 #TARGET_OMX_LEGACY_RESCALING:= true
 
+# Seccomp
+TARGET_DOES_NOT_SUPPORT_SECCOMP := true
+
+# Include
+TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
 # Low-ram
+MALLOC_SVELTE := true
 
-MALLOC_SVELTE := true# Device specific props
+# Device specific props
 TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
 
 # Wi-Fi
@@ -155,6 +162,9 @@ BOARD_RECOVERY_SWIPE := true
 # Sepolicy
 BOARD_SEPOLICY_DIRS += device/xiaomi/hermes/sepolicy
 POLICYVERS := 28
+
+# Misc
+BLOCK_BASED_OTA := false
 
 # Build kernel without kernel sources
 $(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
