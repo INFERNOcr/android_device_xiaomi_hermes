@@ -93,7 +93,9 @@ BOARD_CONNECTIVITY_VENDOR := MediaTek
 BOARD_USES_MTK_AUDIO := true
 
 # Kernel
-TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
+BOARD_KERNEL_IMAGE_NAME := zImage-dtb
+HAS_PREBUILT_KERNEL := true
+TARGET_PREBUILT_KERNEL := device/xiaomi/hermes/kernel
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 androidboot.selinux=permissive
 BOARD_MKBOOTIMG_ARGS := \
     --base 0x40078000 \
@@ -239,7 +241,6 @@ TARGET_LD_SHIM_LIBS += \
 # Seccomp
 TARGET_DOES_NOT_SUPPORT_SECCOMP := true
 
-
 # CWM
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/recovery.fstab
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storage/lun0/file
@@ -257,14 +258,14 @@ TW_EXCLUDE_SUPERSU := true
 TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
 # Sepolicy
 BOARD_SEPOLICY_DIRS += device/xiaomi/hermes/sepolicy
-POLICYVERS := 28
+BOARD_SEPOLICY_VERS := 28
 
 # HIDL
 DEVICE_MANIFEST_FILE := \
     $(LOCAL_PATH)/manifest.xml
 
 # Build kernel without kernel sources
-$(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
+#$(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
 
 # Misc
 #BLOCK_BASED_OTA := false
