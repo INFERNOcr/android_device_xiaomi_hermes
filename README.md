@@ -1,4 +1,4 @@
-# DirtyUnicorns n7x tree for Hermes (Xiaomi Redmi Note 2)
+# DirtyUnicorns n7x-test tree for Hermes (Xiaomi Redmi Note 2)
 
 All credit goes to:
 * @Dinolek
