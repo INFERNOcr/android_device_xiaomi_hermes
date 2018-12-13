@@ -1,17 +1,15 @@
-# DirtyUnicorns n7x tree for Hermes (Xiaomi Redmi Note 2)
+# OMNIROM tree for Hermes (Xiaomi Redmi Note 2)
 
 All credit goes to:
 * @Dinolek
 * @nofearnohappy
 * @jianminglok
 * @bule
+* @azizb750
 <br>
-Commits needed by DU: <br>
+Commits needed by omni: <br>
 
-Commits needed by du/aosp/other aosp-based roms: <br>
-https://github.com/LineageOS/android_bionic/commit/6ca3704f58a1dcbe48b97507206d027d8608f274 <br>
 
-https://github.com/LineageOS/android_hardware_ril/commit/892c17bf67ab361851285d43baafe1f2319775dc <br>
 
 https://github.com/LineageOS/android_frameworks_opt_telephony/commit/4eb40915b291939d7a0d86000ba111dc40db5530 <br>
 
