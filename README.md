@@ -1,10 +1,22 @@
-# LineageOS 14.1 Redmi Note 2 device tree
+# Omnirom omni-7.1-test tree for Hermes (Xiaomi Redmi Note 2)
 
-all credits goes to @Dinolek
+All credit goes to:
+* @Dinolek
+* @nofearnohappy
+* @jianminglok
+* @bule
+<br>
+Commits needed by omni: <br>
 
-commits needed by some custom roms (especially for DotOS && RR) <br>
-fix for mediaprovider <br>
-https://github.com/LineageOS/android_frameworks_base/commit/e2cce1a35350fe92d3cc1aae855223915c7d8740
+Commits needed by du/aosp/other aosp-based roms: <br>
 
-commit for MicroG signature spoofing support <br>
-https://github.com/VertexOS/android_frameworks_base/commit/f11b9139ddb724d06b1b67b2b15072ba20ac9f64
+
+
+
+https://github.com/LineageOS/android_frameworks_opt_telephony/commit/4eb40915b291939d7a0d86000ba111dc40db5530 <br>
+
+https://github.com/LineageOS/android_frameworks_base/commit/fa238cac90e2c1faeda135886f012fc39fd4f724 <br>
+
+https://github.com/LineageOS/android_system_core/commit/b7045fca9f68bf713d0ac73e12e7c8a2161907fe <br>
+
+To intergrate them just type "git cherry-pick commit-id"
