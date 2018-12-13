@@ -8,7 +8,7 @@ All credit goes to:
 <br>
 Commits needed by omni: <br>
 
-Commits needed by du/aosp/other aosp-based roms: <br>
+
 
 
 
