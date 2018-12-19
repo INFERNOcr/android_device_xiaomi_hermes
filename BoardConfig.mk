@@ -169,5 +169,6 @@ POLICYVERS := 28
 # Misc
 #BLOCK_BASED_OTA := false
 
-
+# Build kernel without kernel sources
+# $(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
 
