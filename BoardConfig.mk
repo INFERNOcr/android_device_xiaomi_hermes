@@ -33,6 +33,10 @@ BOARD_MKBOOTIMG_ARGS := \
 
 TARGET_BOARD_KERNEL_HEADERS := device/xiaomi/hermes/kernel-headers
 BOARD_CUSTOM_BOOTIMG := true
+TARGET_KERNEL_SOURCE := kernel/xiaomi/hermes
+TARGET_KERNEL_CONFIG := hermes_defconfig
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
+BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 
 # Miravision And ClearMotion
 MTK_MIRAVISION_IMAGE_DC_SUPPORT = yes
@@ -165,5 +169,5 @@ POLICYVERS := 28
 # Misc
 #BLOCK_BASED_OTA := false
 
-# Build kernel without kernel sources
-$(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
+
+
